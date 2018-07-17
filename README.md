@@ -3,7 +3,7 @@
 get chats for person
 return array of chat for person. with (persons/groups).
 
-* **URL:**   ```GET /chats```
+* **URL:**   `GET /chats`
   
 *  **URL Params**
 
@@ -40,6 +40,7 @@ return array of chat for person. with (persons/groups).
                               "date":1530689520000}
                           }]
                   }
+```
  
 * **Sample Call:**
 ```js
@@ -75,8 +76,21 @@ return array of messages with contact.
     **Content:** 
     ```json
               {
-                    messages: []
+                     messages: [{
+                        "sender":{
+                            "id":1,
+                            "name":"Pazit Flekman"},
+                        "text":"Hello moran, whats up?",
+                        "date":1530789300000},
+                     {
+                        "sender":{
+                            "id":2,
+                            "name":"Moran Green"},
+                        "text":"Hello pazit",
+                        "date":1530792060000
+                      }]
               }
+    ```
  
 * **Sample Call:**
 ```js
