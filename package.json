@@ -1,7 +1,30 @@
 {
-  "name": "$package_name$",
+  "name": "melchat-api",
   "version": "0.0.1",
+  "author": "Pazit Flekman <pazitfl@gmail.com>, Moran Green <morangr@gmail.com, Daniela Green <daniela.grin@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "test": "mocha tests/"
+  },
   "dependencies": {
-    $END$
+    "bluebird": "^3.5.1",
+    "express": "^4.16.3",
+    "http-errors": "^1.6.3",
+    "loadash": "^1.0.0",
+    "lodash": "^4.17.10",
+    "morgan": "^1.9.0",
+    "pg-promise": "^8.4.5",
+    "rc": "^1.2.8"
+  },
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.0"
   }
 }
